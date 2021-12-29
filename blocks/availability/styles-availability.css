@@ -1,0 +1,78 @@
+.table-availability {
+    border-collapse: collapse;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+  
+.table-availability-header {
+    border-bottom: 3px solid #6cc4c8;
+    padding: 1em;
+}
+
+.table-availability-header th {
+    font-size: 1em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    padding: 1em;
+    border: none;
+}
+
+.table-availability-row {
+    border-bottom: 2px solid #4c837e;
+}
+  
+.table-availability-row td {
+    font-size: .85em;
+    padding: 0.85em;
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+.table-availability thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+}
+    
+.table-availability-row {
+    border-bottom: 3px solid #6cc4c8;
+    display: block;
+    margin-bottom: .625em;
+}
+    
+.table-availability-row td {
+      border-bottom: 2px solid #4c837e;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+}
+    
+.table-availability-row td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+.table-availability-row td:last-child {
+      border-bottom: 0;
+    }
+}

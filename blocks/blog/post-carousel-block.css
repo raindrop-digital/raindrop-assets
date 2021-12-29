@@ -1,0 +1,84 @@
+/**
+Description: Custom Styling for success story block
+Version: 1.0.0
+*/
+
+.upstart-success-story-feed-col {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.upstart-success-story-feed-col:before {
+    content: '';
+    background-color: #003e51;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.upstart-success-story-feed-inner {
+    padding: 2em;
+    height: 100%;
+    width: 70%;
+    position: relative;
+    z-index: 10;
+}
+
+.success-story-service-image-wrap {
+    width: 60px;
+    height: 60px;
+}
+
+/* Tablet Upwards */
+@media only screen and (min-width: 768px) {
+    .upstart-success-story-feed-col {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 768px;
+    }
+
+    .upstart-success-story-feed-inner {
+        width: 50%;
+    }
+}
+
+/* Desktop Small */
+@media only screen and (min-width: 992px) {
+    .upstart-success-story-feed-col {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 900px;
+    }
+
+    .upstart-success-story-feed-inner {
+        width: 40%;
+    }
+
+}
+
+/* Desktop Large */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Tablet */
+@media (max-width: 921px) {
+}
+
+/* Mobile & Tablet */
+@media only screen and (max-width: 768px) {}
+
+/* Mobile only */
+@media only screen and (max-width: 544px) {
+
+}
